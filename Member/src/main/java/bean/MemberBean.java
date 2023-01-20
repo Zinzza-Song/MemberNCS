@@ -22,6 +22,10 @@ public class MemberBean {
 		return pwd1;
 	}
 
+	public String getPwd2() {
+		return pwd2;
+	}
+
 	public String getName() {
 		return name;
 	}
@@ -58,8 +62,12 @@ public class MemberBean {
 		this.id = id;
 	}
 
-	public void setPwd(String pwd) {
-		this.pwd1 = pwd;
+	public void setPwd(String pwd1) {
+		this.pwd1 = pwd1;
+	}
+
+	public void setPwd2(String pwd2) {
+		this.pwd2 = pwd2;
 	}
 
 	public void setName(String name) {
@@ -92,14 +100,6 @@ public class MemberBean {
 
 	public void setJob(String job) {
 		this.job = job;
-	}
-
-	public String getPwd2() {
-		return pwd2;
-	}
-
-	public void setPwd2(String pwd2) {
-		this.pwd2 = pwd2;
 	}
 
 }
