@@ -5,14 +5,16 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" href="./script.css">
 <script type="text/javascript" src="./script.js" defer></script>
 </head>
 <body>
+	<div class="container">
 <center>
 
 <h2>회원가입</h2><br>
 	<form action="memberProc.jsp" method="get" name="f">
-	<table border="1" bordercolor="skyblue" width="500">
+	<table>
 	<tr height="50">
 	<td width="200" align="center">아이디</td>
 	<td width="300"><input type="text" name="id" size="30"><input type="button" value="중복확인" onclick="document.location.href=goUrl()"></td>
@@ -61,5 +63,6 @@
 	<input type="submit" value="가입">      <input type="reset" value="재작성">
 	</form>
 </center>
+</div>
 </body>
 </html>
