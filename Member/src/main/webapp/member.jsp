@@ -5,16 +5,17 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script type="text/javascript" src="./script.js" defer></script>
 </head>
 <body>
 <center>
 
 <h2>회원가입</h2><br>
-	<form action="memberProc.jsp" method="get">
+	<form action="memberProc.jsp" method="get" name="f">
 	<table border="1" bordercolor="skyblue" width="500">
 	<tr height="50">
 	<td width="200" align="center">아이디</td>
-	<td width="300"><input type="text" name="id" size="30"><input type="button" value="중복확인" name="idcheck"></td>
+	<td width="300"><input type="text" name="id" size="30"><input type="button" value="중복확인" onclick="document.location.href=goUrl()"></td>
 	</tr>
 	<tr height="50">
 	<td width="200" align="center">비밀번호</td>

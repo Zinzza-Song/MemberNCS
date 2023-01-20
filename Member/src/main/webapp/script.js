@@ -8,3 +8,21 @@ function zipserch(){
 	}
 	return true;
 }
+function checkId(){
+	if(document.idCheckForm.chid.value==null){
+		alert("ID를 입력해주세요.");
+		return false;
+	}
+	if(checkNum==1){
+		alert("ID가 중복됩니다.");
+		return false;
+	}
+	else{
+		return true;
+	}
+}
+
+function goUrl() {
+	const idText = document.f.id.value;
+	return "idCheck.jsp?id="+idText;
+}
