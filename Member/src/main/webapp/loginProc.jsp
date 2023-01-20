@@ -20,7 +20,10 @@
 	if(bean.getId() == null) {
 		out.print("아이디없음");
 	%>
-		<!-- 아이디 없을 때 처리 -->
+		<script type="text/javascript">
+			alert("아이디와 계정을 정확히 입력해주세요");
+			history.go(-1);
+		</script>
 	<%
 	} else {
 		session.setAttribute("user", bean);
