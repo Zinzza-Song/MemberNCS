@@ -15,8 +15,14 @@
 	
 	%>
 	<h2>검색된 내용</h2>
-	<c:forEach var="serchzip" items="${az }">
-		${serchzip }
-	</c:forEach>
+	<%
+	for(int i=0;i<az.size();i++){
+		ZipBean bean=az.get(i);%>
+		<tr heigth="40">
+		<td width="100" align="center"><%=bean.getArea2() %></td>
+			<td width="150" align="center"><%=bean.getArea3() %></td><br>
+			</tr>
+	<% }
+	%>
 </body>
 </html>
