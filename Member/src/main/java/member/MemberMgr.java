@@ -59,17 +59,17 @@ public class MemberMgr {
 		return res;
 	}
 	
-	public MemberBean login(String id, String pw) {
+	public MemberBean login(String id, String pwd) {
 		MemberBean bean = new MemberBean();
 		String sql = "select * from member where id=? and pwd=?";
 		
 		try(Connection con = DBConnectionMgr.getConnection(); PreparedStatement pstmt = con.prepareStatement(sql)) {
-			pstmt.setString(1, id);
-			pstmt.setString(2, pw);
 			
+			pstmt.setString(1, id);
+			pstmt.setString(2, pwd);
 			ResultSet rs = pstmt.executeQuery();
 			
-			while(rs.next()) {
+			if(rs.next()) {
 				bean.setId(rs.getString(1));
 				bean.setPwd(rs.getString(2));
 				bean.setName(rs.getString(3));
@@ -80,7 +80,10 @@ public class MemberMgr {
 				bean.setAddress(rs.getString(8));
 				bean.setHobby(rs.getString(9));
 				bean.setJob(rs.getString(10));
+			} else {
+				System.out.println("찾은게 없음");
 			}
+			rs.close();
 		}catch (Exception e) {
 			e.printStackTrace();
 		}

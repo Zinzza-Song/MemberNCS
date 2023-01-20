@@ -7,6 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+로그아웃 페이지
+<%
+session.invalidate();
+response.sendRedirect("login.jsp");
+%>
 </body>
 </html>
