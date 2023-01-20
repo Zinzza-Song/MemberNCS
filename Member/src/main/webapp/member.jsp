@@ -71,8 +71,8 @@
 							<option>학생</option></select></td>
 				</tr>
 			</table>
-			<input type="submit" value="가입"> <input type="reset"
-				value="재작성">
+			<input type="submit" value="가입" onclick="return ch()"> <input type="reset"
+				value="재작성"> <a href="login.jsp"><input type="button" value="로그인"></a>
 		</form>
 	</center>
 	</div>
