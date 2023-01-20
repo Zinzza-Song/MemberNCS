@@ -5,6 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="./script.css">
 <title>Insert title here</title>
 </head>
 <body>
@@ -13,6 +14,8 @@
 
 	if (bean == null || bean.getId() == null) {
 	%>
+	<center>
+	<h1>Login</h1>
 	<form action="loginProc.jsp">
 	<table border="1" bordercolor="skyblue">
 	
@@ -28,7 +31,7 @@
 	
 	</table>
 	</form>
-	
+	</center>
 	<%
 	} else {
 		%>

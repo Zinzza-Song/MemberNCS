@@ -22,8 +22,12 @@ h2{
 }
 table{
 	width: 500;
+	margin-bottom: 75px;
 }
 td{
 	font-weight: bold; 
 	font-family: 'Cafe24Oneprettynight';
+}
+.fff {
+	padding-bottom: 25px;
 }
