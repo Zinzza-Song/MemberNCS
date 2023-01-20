@@ -26,3 +26,7 @@ function goUrl() {
 	const idText = document.f.id.value;
 	return "idCheck.jsp?id="+idText;
 }
+
+/*function setaddr(){
+	opener.document.f.getElementById("zipcode").value=document.getElementById("zipcode").value
+}*/
