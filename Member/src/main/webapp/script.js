@@ -25,4 +25,10 @@ function checkId(){
 function goUrl() { 
 	const idText = document.f.id.value; 
 	return "idCheck.jsp?id="+idText; 
-} 
+}
+
+function goZip() {
+	window.name = "memberForm";
+	window.open();
+}
+

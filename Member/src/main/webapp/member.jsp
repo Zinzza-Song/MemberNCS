@@ -51,7 +51,7 @@ String addr=request.getParameter("zipc");
 	</tr>
 	<tr height="50">
 	<td width="200" align="center">주소</td>
-	<td width="300"><input type="text" name="address" id="address" size="40"><%=addr %></td>
+	<td width="300"><input type="text" name="address" id="address" size="40"></td>
 	</tr>
 	<tr height="50">
 	<td width="200" align="center">취미</td>
