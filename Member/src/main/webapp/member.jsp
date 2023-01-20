@@ -8,10 +8,6 @@
 <script type="text/javascript" src="./script.js" defer></script>
 </head>
 <body>
-
-<%request.setCharacterEncoding("utf-8");
-String addr=request.getParameter("zipc");
-%>
 <center>
 
 <h2>회원가입</h2><br>
