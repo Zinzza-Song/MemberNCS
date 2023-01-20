@@ -3,7 +3,8 @@ package bean;
 public class MemberBean {
 
 	private String id;
-	private String pwd;
+	private String pwd1;
+	private String pwd2;
 	private String name;
 	private String gender;
 	private String email;
@@ -18,7 +19,11 @@ public class MemberBean {
 	}
 
 	public String getPwd() {
-		return pwd;
+		return pwd1;
+	}
+
+	public String getPwd2() {
+		return pwd2;
 	}
 
 	public String getName() {
@@ -57,8 +62,12 @@ public class MemberBean {
 		this.id = id;
 	}
 
-	public void setPwd(String pwd) {
-		this.pwd = pwd;
+	public void setPwd(String pwd1) {
+		this.pwd1 = pwd1;
+	}
+
+	public void setPwd2(String pwd2) {
+		this.pwd2 = pwd2;
 	}
 
 	public void setName(String name) {
