@@ -85,7 +85,7 @@ public class MemberMgr {
 			e.printStackTrace();
 		}
 		
-		return bean;
+		return bean;//bean.getId();
 	}
 	
 	public ArrayList<ZipBean> serchZip(String keyword) {
