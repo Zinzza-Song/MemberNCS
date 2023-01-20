@@ -21,17 +21,7 @@
 	<%
 	} else {
 		%>
-		<%=bean.getId() %> <br>
-		<%=bean.getPwd() %> <br>
-		<%=bean.getName() %> <br>
-		<%=bean.getGender() %> <br>
-		<%=bean.getEmail() %> <br>
-		<%=bean.getBirth() %> <br>
-		<%=bean.getZipcode() %> <br>
-		<%=bean.getAddress() %> <br>
-		<%=bean.getHobby() %> <br>
-		<%=bean.getJob() %> <br>
-		님로그인성공
+		<%=bean.getId() %> 님로그인성공 
 		<input type="button" value="로그아웃" onclick="location.href='logout.jsp'">
 	<%
 	}
